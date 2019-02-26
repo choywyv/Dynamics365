@@ -91,7 +91,7 @@
 
     HttpURLConnection connection;
        
-    connection = (HttpURLConnection) new URL("https://efmdev.crm5.dynamics.com/api/data/v9.0/WhoAmI").openConnection();
+    connection = (HttpURLConnection) new URL(dynamics url).openConnection();
     connection.setRequestMethod("GET");
     connection.setRequestProperty("OData-MaxVersion", "4.0");
     connection.setRequestProperty("OData-Version", "4.0");
